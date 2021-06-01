@@ -20,8 +20,10 @@ class Controller
   void out_img();
   ~Controller();
   std::queue<std::string> images; // ссывлка на картинику
-  std::queue<struct http_parse> http_for_parse; // структура со скачанноййц страницуей и глубиной
-  std::queue<struct links> collection_links; // структура с ссылками на скачивание и глубиной
+  std::queue<struct http_parse> http_for_parse; // структура со скачанноййц
+                                                // страницуей и глубиной
+  std::queue<struct links> collection_links; // структура с ссылками на
+                                             // скачивание и глубиной
  private:
   std::string link_to_start;
   std::string output_ref;
